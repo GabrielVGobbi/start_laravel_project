@@ -4,9 +4,15 @@
 @import "./node_modules/bootstrap/scss/mixins.scss";
 
 /**
+* Components
+*/
+@import "custom/components/cards";
+
+/**
 * Structure
 */
 @import "custom/custom";
+@import "custom/structure/forms";
 
 /**
 * Plugins

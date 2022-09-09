@@ -1,6 +1,17 @@
 /**
+* Components
+*/
+.card {
+  margin-bottom: 0.8rem !important;
+}
+
+/**
 * Structure
 */
+.form-group {
+  margin-bottom: 0.8rem;
+}
+
 /**
 * Plugins
 */

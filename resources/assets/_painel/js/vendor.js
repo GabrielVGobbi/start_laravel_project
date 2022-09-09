@@ -2,6 +2,7 @@ window._ = require('lodash');
 
 try {
     window.bootstrap = require('bootstrap');
+    window.imask = require('imask');
 } catch (e) { }
 
 /**

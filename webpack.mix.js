@@ -12,13 +12,16 @@ const mix = require('laravel-mix');
  */
 
 mix
-    .js('resources/assets/_painel/js/vendor.js', 'public/painel/js')
-    .sass('resources/assets/_painel/sass/app.scss', 'public/panel/css')
-    .sass('resources/assets/_painel/sass/main.scss', 'public/panel/css')
+    //.js('resources/assets/_painel/js/vendor.js', 'public/painel/js')
+    //.sass('resources/assets/_painel/sass/main.scss', 'public/painel/css')
+    .sass('resources/assets/_painel/sass/app.scss', 'public/painel/css')
 
 
     .scripts([
+        'resources/assets/_painel/js/libs/autosize/autosize.min.js',
+        'resources/assets/_painel/js/painel.js',
         'resources/assets/_painel/js/libs/toast/toast.js',
+        'resources/assets/_painel/js/libs/mask/mask.js',
     ], 'public/painel/js/app.js')
 
     .sourceMaps()

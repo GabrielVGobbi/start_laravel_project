@@ -7,6 +7,8 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta ref="js-base_url" content="{{ env('APP_URL') }}">
+    <meta ref="js-base_url_api" content="{{ env('APP_URL_API') }}">
 
     <title>Login</title>
 
