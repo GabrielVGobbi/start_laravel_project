@@ -1,0 +1,85 @@
+@keyframes fa-bell {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.noti-dot {
+    -webkit-animation: fa-bell 0.75s linear infinite;
+    -moz-animation: fa-bell 0.75s linear infinite;
+    -ms-animation: fa-bell 0.75s linear infinite;
+    -o-animation: fa-bell 0.75s linear infinite;
+    animation: fa-bell 0.75s linear infinite;
+}
+
+.notifications-header {
+    max-height: 300px;
+    overflow: auto;
+
+    .notification-item {
+        .d-flex {
+            padding: 0.75rem 1rem;
+        }
+
+        h6,
+        p {
+            margin-bottom: 0.5rem;
+        }
+
+        span {
+            i.fa-clock {
+                color: #74788d !important;
+            }
+        }
+
+        .n-message,
+        .n-title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+        }
+
+        .n-title {
+            -webkit-line-clamp: 1;
+            line-clamp: 1;
+        }
+
+        .n-message {
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+        }
+
+        .flex-1 {
+            flex: 1;
+        }
+    }
+}
+
+.notifications-list {
+    .notifications-item {
+        border-bottom: 1px solid #f1f5f7;
+
+        .d-flex {
+            justify-content: space-between;
+        }
+
+        p {
+            margin-bottom: 0px;
+        }
+
+        &:hover {
+            background-color: $gray-300;
+        }
+
+        .avatar-xs {
+            flex: none;
+        }
+    }
+}

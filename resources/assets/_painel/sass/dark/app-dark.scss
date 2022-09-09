@@ -1,0 +1,26 @@
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "variables-dark";
+@import "./node_modules/bootstrap/scss/mixins.scss";
+
+/**
+* Structure
+*/
+@import "../custom";
+@import "../custom/structure/general";
+@import "../custom/structure/topbar";
+@import "../custom/structure/navbar";
+@import "../custom/structure/table";
+
+/**
+* Components
+*/
+@import "../custom/components/avatar";
+@import "../custom/components/dropdown";
+@import "../custom/components/notifications";
+
+/**
+* Helpers
+*/
+@import "../custom/helpers/gap";
+@import "../custom/helpers/typographie";

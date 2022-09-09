@@ -1,0 +1,87 @@
+.user-dropdown {
+    .dropdown-item {
+        i {
+            display: inline-block;
+        }
+    }
+}
+
+.noti-icon {
+    i {
+        font-size: 18px;
+        color: $header-item-color;
+        margin-top: 2.5px;
+    }
+
+    .noti-dot {
+        position: absolute;
+        display: inline-block;
+        height: 6px;
+        width: 6px;
+        background-color: $danger;
+        border-radius: 50%;
+        top: 6px;
+        right: 12px;
+    }
+}
+
+.notification-item {
+    .d-flex {
+        //padding-top: 1rem;
+
+        // &:hover {
+        //     background-color: $gray-300;
+        // }
+    }
+}
+
+// Dropdown with Icons
+.dropdown-icon-item {
+    display: block;
+    border-radius: 3px;
+    line-height: 34px;
+    text-align: center;
+    padding: 15px 0 9px;
+    display: block;
+    border: 1px solid transparent;
+    color: $gray-600;
+
+    img {
+        height: 24px;
+    }
+
+    span {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &:hover {
+        border-color: $border-color;
+    }
+}
+
+.notifications-header::-webkit-scrollbar {
+    width: 6px;
+    min-height: 10px;
+}
+.notifications-header::-webkit-scrollbar-track {
+    background-color: $primary;
+    height: 8px;
+    background-clip: padding-box;
+    border-right: 10px solid rgba(0, 0, 0, 0);
+    border-top: 10px solid rgba(0, 0, 0, 0);
+    border-bottom: 10px solid rgba(0, 0, 0, 0);
+}
+
+.notifications-header::-webkit-scrollbar-thumb {
+    position: absolute;
+    content: "";
+    background: $primary;
+    border-radius: 7px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}

@@ -1,0 +1,92 @@
+/**
+* Structure
+*/
+/**
+* Plugins
+*/
+/* =============
+   Notification
+============= */
+#toast-container > div {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  opacity: 1;
+}
+#toast-container > div:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  opacity: 0.9;
+}
+#toast-container.toast-top-full-width > div, #toast-container.toast-bottom-full-width > div {
+  min-width: 96%;
+  margin: 4px auto;
+}
+
+.toast-primary {
+  border: 2px solid #0d6efd !important;
+  background-color: #0d6efd !important;
+  color: #fff !important;
+}
+
+.toast-secondary {
+  border: 2px solid #6c757d !important;
+  background-color: #6c757d !important;
+  color: #fff !important;
+}
+
+.toast-success {
+  border: 2px solid #198754 !important;
+  background-color: #198754 !important;
+  color: #fff !important;
+}
+
+.toast-info {
+  border: 2px solid #0dcaf0 !important;
+  background-color: #0dcaf0 !important;
+  color: #fff !important;
+}
+
+.toast-warning {
+  border: 2px solid #ffc107 !important;
+  background-color: #ffc107 !important;
+  color: #fff !important;
+}
+
+.toast-danger {
+  border: 2px solid #dc3545 !important;
+  background-color: #dc3545 !important;
+  color: #fff !important;
+}
+
+.toast-light {
+  border: 2px solid #f8f9fa !important;
+  background-color: #f8f9fa !important;
+  color: #fff !important;
+}
+
+.toast-dark {
+  border: 2px solid #212529 !important;
+  background-color: #212529 !important;
+  color: #fff !important;
+}
+
+.toast-error {
+  background-color: #dc3545;
+  border: 2px solid #dc3545;
+  color: #fff !important;
+}
+
+.toast-warning {
+  background-color: #dc3545;
+  border: 2px solid #dc3545;
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.toastr-options {
+  padding: 24px;
+  background-color: #eff1f3;
+  margin-bottom: 0;
+  border: 1px solid #dee2e6;
+}
+
+.toast .btn-close {
+  color: #fff !important;
+}

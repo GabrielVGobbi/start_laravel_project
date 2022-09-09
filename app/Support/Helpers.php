@@ -29,3 +29,13 @@ function _mix($path)
 {
     return config('app.env')  == 'production' ? url(asset(mix($path))) : asset($path);
 }
+
+function uuid()
+{
+    return Str::uuid();
+}
+
+function slug($value, $caracter = '_')
+{
+    return Str::slug(mb_strtolower($value, 'UTF-8'), $caracter);
+}

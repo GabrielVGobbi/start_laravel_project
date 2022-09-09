@@ -1,0 +1,51 @@
+$base-spacing-unit: 24px;
+$half-spacing-unit: 12px;
+$border-radius-global: 5px;
+$button-width: auto;
+$button-height: 50px;
+$button-text-color: white;
+
+$social-list: (
+    facebook #4b70ab,
+    linkedin #0087be,
+    google #d62d20,
+    twitter #3b94d9,
+    yahoo #500095,
+    openid #f78c40,
+    googleplus #dd4b39,
+    dropbox #007de1,
+    github #333,
+    bitbucket #205081,
+    soundcloud #ff5500,
+    spotify #2ebd59,
+    microsoft #00a4ef,
+    flickr #ff0084,
+    psn black,
+    xbox #117d10,
+    twitch #9147ff,
+    paypal #003087
+);
+
+@each $name, $color in $social-list {
+    .btn-#{$name} {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        background-color: $color;
+        border: 1px solid darken($color, 10%);
+        border-radius: 0.6rem !important;
+        height: 2.8rem !important;
+        color: white;
+
+        span,
+        i {
+            color: $button-text-color;
+        }
+
+        &:hover {
+            background-color: darken($color, 5%);
+            color: white !important;
+        }
+    }
+}

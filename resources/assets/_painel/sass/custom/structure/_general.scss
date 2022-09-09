@@ -1,0 +1,78 @@
+body::-webkit-scrollbar {
+    width: 6px;
+    min-height: 10px;
+}
+body::-webkit-scrollbar-track {
+    background-color: $primary;
+    height: 8px;
+    background-clip: padding-box;
+    border-right: 10px solid rgba(0, 0, 0, 0);
+    border-top: 10px solid rgba(0, 0, 0, 0);
+    border-bottom: 10px solid rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+    position: absolute;
+    content: "";
+    background: $primary;
+    border-radius: 7px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.scrollbox::-webkit-scrollbar {
+    width: 6px;
+    min-height: 10px;
+    height: 10px;
+}
+
+.scrollbox::-webkit-scrollbar-track {
+    background-color: $primary;
+    height: 8px;
+    background-clip: padding-box;
+    border-right: 10px solid rgba(0, 0, 0, 0);
+    border-top: 10px solid rgba(0, 0, 0, 0);
+    border-bottom: 10px solid rgba(0, 0, 0, 0);
+}
+
+.scrollbox::-webkit-scrollbar-thumb {
+    position: absolute;
+    content: "";
+    background: $primary;
+    border-radius: 7px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.scrollbox::-webkit-scrollbar-button {
+    display: none;
+}
+
+label {
+    font-weight: 300;
+}
+
+span.divider {
+    display: table;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: rgb(127, 127, 127);
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    &::before,
+    &::after {
+        border-top: 1px solid rgb(204, 204, 204);
+        content: "";
+        display: table-cell;
+        position: relative;
+        top: 0.8em;
+        width: 42%;
+    }
+}
